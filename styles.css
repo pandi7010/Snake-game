@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:navy;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 20px solid gold;
+    border-radius: 15px;
+    background-color: #121212;
+    background-image: url('https://www.example.com/floral-pattern.png'); /* Replace with actual URL of floral pattern */
+    background-size: cover;
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#ui {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#startBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+}
